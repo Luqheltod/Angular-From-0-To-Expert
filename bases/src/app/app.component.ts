@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   titulo = 'Contador';
+
+  numero : number = 0;
+
+
+  sumaUno(){
+    this.numero = this.numero + 1;
+  }
+
+  restaUno(){
+    this.numero = this.numero - 1;
+  }
 }
