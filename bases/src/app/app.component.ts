@@ -9,13 +9,10 @@ export class AppComponent {
   titulo = 'Contador';
 
   numero : number = 0;
+  base: number = 5;
 
 
-  sumaUno(){
-    this.numero = this.numero + 1;
-  }
-
-  restaUno(){
-    this.numero = this.numero - 1;
+  acumular(valor:number){
+    this.numero += valor;
   }
 }
